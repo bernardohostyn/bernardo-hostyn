@@ -1,0 +1,40 @@
+
+// Programa em C, tudo que estiver após as 2 barras são conentários como solicitado no exercício
+
+#include <stdio.h>
+#include <math.h> 
+void main()
+{ 
+   int opcao;
+   float raiz; raiz1; raiz2; valor1; valor2; soma; potenciacao; divisao; multiplicacao       
+   printf("NOME DO AUTOR","ANÁLISE E DESEMVOLVIMENTO DE SISTEMAS - ADS","NUMERO DE MATRICULA");	   
+   printf("ENTRE COM A OPÇÃO DE CÁLCULO QUE DESEJA REALIZAR, 1 - RAIZ QUADRADA, 2 - SOMA, MULTIPILCAÇÃO, DIVISÃO, POTENCIAÇÃO: "); 
+   scanf("%d", &opcao); 
+   printf("Digite o primeiro valor para cálculo: ");
+   scanf("%d", &valor1);
+   printf("Digite o segundo valor para cálculo: ");
+   scanf("%d", &valor2);
+   if (opcao == 1) 
+   {
+	raiz1 = sqrt(valor1); // função sqrt retorna o valor da raiz quadrada de um número.
+	printf("Raiz Quadrada de",valor1, "é: ", raiz1);
+	raiz2 = sqrt(valor2);
+	printf("Raiz Quadrada de",valor2, "é: ", raiz2);
+   }  
+   if (opcao == 2) 
+   {
+	soma = valor1 + valor2; 
+	printf("A soma dos valores é: ", soma);
+	divisao = valor1 / valor2; 
+	printf("A divisão dos valores é: ", divisao);
+        pot1 = pow(valor1,2); 
+	printf("A potenciação do primeiro valor é: ", pot1);
+        pot2 = pow(valor2,2); 
+	printf("A potenciação do segundo valor é: ", pot2);
+	multiplicacao = valor1 * valor2; 
+        printf("A multiplicação dos valores é: ", multiplicacao);
+   }
+   if (opcao != 1 && opcao != 2);
+	printf("Opcão digitada invalida"); 
+   }
+}
